@@ -3,7 +3,7 @@
 const https = require('https');
 const url = require('url');
 
-module.exports = (event, context, status, responseData) => {
+module.exports = (event, context, status, responseData, physicalResourceId) => {
   if (
       typeof (event) !== 'object' ||
       typeof (context) !== 'object' ||
@@ -15,7 +15,7 @@ module.exports = (event, context, status, responseData) => {
   const responseBody = JSON.stringify({
     Status: status,
     Reason: "See the details in CloudWatch Log Stream: " + context.logStreamName,
-    PhysicalResourceId: context.logStreamName,
+    PhysicalResourceId: physicalResourceId || context.logStreamName,
     StackId: event.StackId,
     RequestId: event.RequestId,
     LogicalResourceId: event.LogicalResourceId,
