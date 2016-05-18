@@ -35,8 +35,10 @@ module.exports = (event, context, status, responseData) => {
   };
 
   return new Promise((resolve, reject) => {
-    const request = https.request(options, (err, response) => {
-      if (err) reject(new Error('Invalid or expired URL'));
+    const request = https.request(options, (response) => {
+      if (response.statusCode < 200 || response.statusCode > 299) {
+        reject(new Error('Failed to load page, status code: ' + response.statusCode));
+      }
     });
     request.on('error', (err) => (reject(err)));
     request.write(responseBody);
