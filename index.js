@@ -1,3 +1,8 @@
+'use strict';
+
+const https = require('https');
+const url = require('url');
+
 module.exports = (event, context, status, responseData) => {
   if (
       typeof (event) !== 'object' ||
@@ -17,10 +22,7 @@ module.exports = (event, context, status, responseData) => {
     Data: responseData
   });
 
-  const https = require('https');
-  const url = require('url');
   const parsedUrl = url.parse(event.ResponseURL);
-
   const options = {
     hostname: parsedUrl.hostname,
     port: 443,
