@@ -36,7 +36,7 @@ module.exports = (event, context, status, responseData) => {
 
   return new Promise((resolve, reject) => {
     const request = https.request(options, (err, response) => {
-      if (err) return reject(new Error('Invalid or expired URL'));
+      if (err) reject(new Error('Invalid or expired URL'));
     });
     request.on('error', (err) => (reject(err)));
     request.write(responseBody);
