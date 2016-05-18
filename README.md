@@ -1,4 +1,4 @@
-[![Code Climate](https://codeclimate.com/github/natachaS/lambda-cfn-response/badges/gpa.svg)](https://codeclimate.com/github/natachaS/lambda-cfn-response) [![Travis CI](https://travis-ci.org/natachaS/lambda-cfn-response.svg?branch=master)
+[![Code Climate](https://codeclimate.com/github/natachaS/lambda-cfn-response/badges/gpa.svg)](https://codeclimate.com/github/natachaS/lambda-cfn-response) ![Travis CI](https://travis-ci.org/natachaS/lambda-cfn-response.svg?branch=master) [![Issue Count](https://codeclimate.com/github/natachaS/lambda-cfn-response/badges/issue_count.svg)](https://codeclimate.com/github/natachaS/lambda-cfn-response) [![Test Coverage](https://codeclimate.com/github/natachaS/lambda-cfn-response/badges/coverage.svg)](https://codeclimate.com/github/natachaS/lambda-cfn-response/coverage)
 
 ## lambda-cfn-response
 
