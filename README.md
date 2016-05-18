@@ -1,4 +1,4 @@
-[![Code Climate](https://codeclimate.com/github/natachaS/lambda-cfn-response/badges/gpa.svg)](https://codeclimate.com/github/natachaS/lambda-cfn-response)
+[![Code Climate](https://codeclimate.com/github/natachaS/lambda-cfn-response/badges/gpa.svg)](https://codeclimate.com/github/natachaS/lambda-cfn-response) [![Travis CI](https://travis-ci.org/natachaS/lambda-cfn-response.svg?branch=master)
 
 ## lambda-cfn-response
 
