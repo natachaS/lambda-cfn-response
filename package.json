@@ -1,6 +1,6 @@
 {
   "name": "lambda-cfn-response",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "The module contains a send method, which sends a response object to a custom resource by way of an Amazon S3 pre-signed URL.",
   "main": "index.js",
   "scripts": {

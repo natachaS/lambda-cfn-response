@@ -7,8 +7,7 @@ module.exports = (event, context, status, responseData, physicalResourceId) => {
   if (
       typeof (event) !== 'object' ||
       typeof (context) !== 'object' ||
-      typeof (status) !== 'string' ||
-      typeof (responseData) !== 'object'
+      typeof (status) !== 'string'
       ) {
     throw new Error('You must pass valid arguments to the function');
   }
