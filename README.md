@@ -1,4 +1,4 @@
-
+[![Code Climate](https://codeclimate.com/github/natachaS/lambda-cfn-response/badges/gpa.svg)](https://codeclimate.com/github/natachaS/lambda-cfn-response)
 
 ## lambda-cfn-response
 
