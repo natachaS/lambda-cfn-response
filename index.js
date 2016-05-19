@@ -11,10 +11,11 @@ module.exports = (event, context, status, responseData) => {
       ) {
     throw new Error('You must pass valid arguments to the function');
   }
+
   const responseBody = JSON.stringify({
     Status: status,
     Reason: "See the details in CloudWatch Log Stream: " + context.logStreamName,
-    PhysicalResourceId: event.LogicalResourceId,
+    PhysicalResourceId: context.logStreamName,
     StackId: event.StackId,
     RequestId: event.RequestId,
     LogicalResourceId: event.LogicalResourceId,
