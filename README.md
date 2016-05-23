@@ -2,7 +2,7 @@
 
 ## lambda-cfn-response
 
-The module contains a send method, which sends a response object to a custom resource by way of an Amazon S3 pre-signed URL.
+The module sends a response object to a custom resource by way of an Amazon S3 pre-signed URL.
 
 This module is different from the cfn-response module available on NPM as it doesn't end your lambda upon execution.
 This module returns a Promise and will need to be chained with ``` context.done ``` in order to stop the lambda execution.
