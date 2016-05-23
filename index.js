@@ -6,7 +6,6 @@ const url = require('url');
 module.exports = (event, context, status, responseData) => {
   if (
       typeof (event) !== 'object' ||
-      typeof (context) !== 'object' ||
       typeof (status) !== 'string'
       ) {
     throw new Error('You must pass valid arguments to the function');
